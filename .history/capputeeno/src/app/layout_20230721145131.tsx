@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={saira.className}>
-        <Header/>
+        <Header>CAPPUTEENO</Header>
         {children}
       </body>
     </html>
