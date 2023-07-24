@@ -3,7 +3,6 @@
 export default function Home() {
   return (
     <div></div>
-=======
 import Image from 'next/image'
 import styles from './page.module.css'
 
@@ -97,6 +96,5 @@ export default function Home() {
         </a>
       </div>
     </main>
->>>>>>> 75954341af548d8e1847523cc0f2743b47cb6430
   )
 }
