@@ -3,7 +3,6 @@ import { useQuery } from '@tanstack/react-query'
 import axios, { AxiosPromise } from 'axios'
 import { useFilter } from './useFilter'
 import { mountQuery } from '@/utils/FormatPrice'
-import { useDeferredValue } from 'react'
 
 const API_URL = process.env.NEXT_PUBLIC_API_URL as string
 
@@ -12,8 +11,7 @@ const fetcher = (query: string): AxiosPromise<ProductsFetchResponse> => {
 }
 
 export function useProducts(){
-  const { type, priority, search } = useFilter()
-  const searchD = useDeferredValue(search)
+  const { type, priority } = useFilter()
   const query = mountQuery(type, priority)
   const { data } = useQuery({
     queryFn: () => fetcher(query),

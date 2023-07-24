@@ -36,15 +36,12 @@ const Logo = styled.a`
 interface HeaderProps{}
 
 export function Header(props: HeaderProps){
-  const {setSearch, search} = useFilter()
+  const {setSearch, search}} = useFilter()
   return(
     <TagHeader>
       <Logo className={sairaStencil.className}>Capputeeno</Logo>
       <div>
-        <PrimaryInputWSearchIcon 
-          value={search}
-          handleChange={setSearch}
-          placeholder="Procurando por algo específico?"/>
+        <PrimaryInputWSearchIcon placeholder="Procurando por algo específico?"/>
         <CartControl/>
       </div>
     </TagHeader>

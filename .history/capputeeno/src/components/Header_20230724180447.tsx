@@ -43,8 +43,7 @@ export function Header(props: HeaderProps){
       <div>
         <PrimaryInputWSearchIcon 
           value={search}
-          handleChange={setSearch}
-          placeholder="Procurando por algo específico?"/>
+        placeholder="Procurando por algo específico?"/>
         <CartControl/>
       </div>
     </TagHeader>
